@@ -30,7 +30,7 @@ class LoginController: UIViewController , URLSessionDelegate {
         b.layer.cornerRadius = 25
         b.translatesAutoresizingMaskIntoConstraints = false
         b.backgroundColor = UIColor(red: 0, green: 186, blue: 188, alpha: 1)
-        b.setAttributedTitle(NSAttributedString(string: "Go", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]), for: .normal)
+        b.setAttributedTitle(NSAttributedString(string: "Go", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white]), for: .normal)
         return b
     }()
     
@@ -41,7 +41,7 @@ class LoginController: UIViewController , URLSessionDelegate {
         tf.textAlignment = .center
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.layer.borderColor = UIColor(red: 0, green: 186, blue: 188, alpha: 1).cgColor
-        tf.attributedPlaceholder = NSAttributedString(string: "Login", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        tf.attributedPlaceholder = NSAttributedString(string: "Login", attributes: [NSAttributedStringKey.foregroundColor : UIColor.white])
         tf.textColor = UIColor.white
         return tf
     }()
@@ -54,7 +54,7 @@ class LoginController: UIViewController , URLSessionDelegate {
         tf.isSecureTextEntry = true
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.layer.borderColor = UIColor(red: 0, green: 186, blue: 188, alpha: 1).cgColor
-        tf.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        tf.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedStringKey.foregroundColor : UIColor.white])
         tf.textColor = UIColor.white
         return tf
     }()
